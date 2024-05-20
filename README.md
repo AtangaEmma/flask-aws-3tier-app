@@ -89,7 +89,7 @@ SSH into the data tier instance and run the following commands.
         email VARCHAR(100)
      );
 
-     - Verify table creation:
+   - Verify table creation:
      ```sh
      SHOW TABLES;
      DESCRIBE applications;
