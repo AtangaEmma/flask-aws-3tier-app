@@ -27,7 +27,7 @@ Below is the architecture diagram illustrating the setup. You will see the separ
 ## Creating the Instances for the Different Tiers
 In this scenario, we are going to use the default VPC. We will create a security group which we will use for all three instances with the following inbound rules.
 
-
+![security_group_rules](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/163244d4-459b-4e9d-a53a-1b8138e59b3c)
 
 **Note:** This setup is for illustration purposes. In a real-world scenario, you would need to tighten your security as per the requirements.
 
