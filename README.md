@@ -18,5 +18,6 @@ MariaDB: Use MariaDB for the relational database to store user information and a
 Apache HTTP Server: Serve the front-end content using Apache on the Presentation Tier.
 By the end of this project, you will have a fully functional 3-tier Flask application deployed on AWS, capable of handling user inputs, processing data, and storing it securely in a database. This setup is ideal for applications that require robust data management and high scalability, such as e-commerce platforms, content management systems, and more.
 
-Architecture Diagram
+# Architecture Diagram
 Below is the architecture diagram illustrating the setup. You will see the separation of the three tiers, each hosted on its own AWS EC2 instance, communicating with each other to deliver a seamless user experience.
+
