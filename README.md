@@ -28,3 +28,12 @@ Below is the architecture diagram illustrating the setup. You will see the separ
 In this scenario, we are going to use the default VPC. We will create a security group which we will use for all three instances with the following inbound rules.
 
 **Note:** This setup is for illustration purposes. In a real-world scenario, you would need to tighten your security as per the requirements.
+
+# Configuration Process
+
+### Data Tier
+
+1. **Install MariaDB**:
+   ```sh
+   sudo yum update -y
+   sudo yum install -y mariadb-server
