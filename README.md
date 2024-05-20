@@ -148,8 +148,13 @@ SSH into the presenter tier instance and run the following commands.
 
 ![submit_input](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/2845236d-dad4-4b9f-8e43-5c52bc8f86a2)
 
-3. 
-   
+3. Log into the Database tier, search the flaskdb, and check if the input data was stored in the database:
+   ```sh
+   mysql -u root -p
+   USE flaskdb;
+   SELECT * FROM applications;
+ 
+![database_view](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/55c1edf5-d95e-44f7-8096-b9559b00e1d5)   
 
 
 
