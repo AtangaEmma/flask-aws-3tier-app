@@ -27,6 +27,8 @@ Below is the architecture diagram illustrating the setup. You will see the separ
 ## Creating the Instances for the Different Tiers
 In this scenario, we are going to use the default VPC. We will create a security group which we will use for all three instances with the following inbound rules.
 
+
+
 **Note:** This setup is for illustration purposes. In a real-world scenario, you would need to tighten your security as per the requirements.
 
 # Configuration Process
