@@ -32,6 +32,7 @@ In this scenario, we are going to use the default VPC. We will create a security
 # Configuration Process
 
 ### Data Tier
+
 SSH into the data tier instance and run the following commands.
 
 1. **Install MariaDB**:
@@ -93,6 +94,58 @@ SSH into the data tier instance and run the following commands.
      ```sh
      SHOW TABLES;
      DESCRIBE applications;
+
+
+### Logic Tier
+
+SSH into the logic tier instance and run the following commands.
+
+1. **Install Flask Dependencies**:
+   ```sh
+   sudo yum update -y
+   sudo yum install -y python3
+   python3 -m pip install --upgrade pip
+   pip3 install flask flask-cors mysql-connector-python
+
+2. **Create app.py**:
+   - Create the app.py then paste the code in the app.py file found in this github repo into the file.
+
+**Note**: Remember to Replace the hostname = 'with the public_ip of database tier', user = 'the user you created when creating your database',    password = 'the password you used' and database = 'the name of the database you created in the database tier'.
+   
+   - Run the Flask application:
+     ```sh
+     python3 app.py
+
+
+### Presenter Tier
+
+SSH into the presenter tier instance and run the following commands.
+
+1. **Install and Configure Apache**:
+   ```sh
+   sudo yum update -y
+   sudo yum install httpd -y
+   sudo systemctl start httpd 
+   sudo systemctl enable httpd
+
+2. **Create index.html**:
+   - Create the index.html file in the following directory and paste the code found in the index.html file in GitHub into this created index.html file in your ec2 machine.
+   ```sh
+   cd /var/www/html/
+
+3. **Restart the Apache Server**:
+   ```sh
+   sudo systemctl restart httpd
+
+
+###  Tier
+   
+
+
+
+
+
+     
 
      
 
