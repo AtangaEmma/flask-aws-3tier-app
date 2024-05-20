@@ -142,6 +142,10 @@ SSH into the presenter tier instance and run the following commands.
 
 1. Copy the public IP of the presenter or frontend instance and paste it into the browser to check if the frontend is reachable.
 
+![frontend_test_view](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/d9dd1f64-b146-481b-ac90-8a1df7c869a6)
+
+2. Input data and try submitting it.
+
    
 
 
