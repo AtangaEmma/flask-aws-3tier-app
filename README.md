@@ -138,7 +138,10 @@ SSH into the presenter tier instance and run the following commands.
    sudo systemctl restart httpd
 
 
-###  Tier
+### Testing 
+
+1. Copy the public IP of the presenter or frontend instance and paste it into the browser to check if the frontend is reachable.
+
    
 
 
