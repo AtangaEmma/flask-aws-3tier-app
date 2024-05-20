@@ -32,7 +32,7 @@ In this scenario, we are going to use the default VPC. We will create a security
 # Configuration Process
 
 ### Data Tier
-SSH into the data tier instance and run the following commands
+SSH into the data tier instance and run the following commands.
 
 1. **Install MariaDB**:
    ```sh
@@ -43,4 +43,58 @@ SSH into the data tier instance and run the following commands
    ```sh
    sudo systemctl start mariadb
    sudo systemctl enable mariadb
+   
+3. **Secure MariaDB Installation**:
+   ```sh
+   sudo mysql_secure_installation
 
+4. **Create a Database and User**:
+   - Log in to MariaDB:
+     ```sh
+     mysql -u root -p
+
+   - Create flaskdb database, a user flaskuser and grant user privilage:
+     ```sh
+     CREATE DATABASE flaskdb;
+     CREATE USER 'flaskuser'@'private_ip_logic_tier' IDENTIFIED BY 'your_password';
+     GRANT ALL PRIVILEGES ON flaskdb.* TO 'flaskuser'@'private_ip_logic_tier';
+     GRANT ALL PRIVILEGES ON flaskdb.* TO 'flaskuser'@'public_ip_logic_tier';
+     FLUSH PRIVILEGES;
+
+5. **Configure MariaDB to Accept Remote Connections**:
+   - Edit the MariaDB configuration file:
+     ```sh
+     sudo vi /etc/my.cnf
+
+   - Find the [mysqld] section and add or modify the following line:
+     ```sh
+     bind-address=0.0.0.0
+
+   - Restart the MariaDB server to effect the changes:
+     ```sh
+     sudo systemctl restart mariadb
+
+6. **Create User Table**:
+   - Log into MariaDB:
+     ```sh
+     mysql -u root -p
+
+   - Create the applications table:
+     ```sh
+     CREATE TABLE applications (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        first_name VARCHAR(100),
+        last_name VARCHAR(100),
+        dob DATE,
+        email VARCHAR(100)
+     );
+
+     - Verify table creation:
+     ```sh
+     SHOW TABLES;
+     DESCRIBE applications;
+
+     
+
+     
+   
