@@ -6,11 +6,12 @@ In today's digital landscape, web applications are essential for delivering inte
 
 In this project, we will guide you through the process of setting up a 3-tier Flask application in Amazon Web Services (AWS). Flask, a lightweight and powerful web framework for Python, will serve as the backbone of our application. By leveraging AWS's extensive cloud services, we will deploy a scalable and secure web application that can handle a variety of workloads.
 
-Project Objectives
+# Project Objectives
 Presentation Tier: Set up the front-end of the application using HTML, CSS, and JavaScript to create a user-friendly interface for submitting data.
 Logic Tier: Implement the business logic using Flask to handle user requests, process data, and interact with the database.
 Data Tier: Configure and manage a MariaDB database to store application data securely and efficiently.
-Key Components
+
+# Key Components
 AWS EC2 Instances: Deploy each tier on separate EC2 instances to ensure isolation and scalability.
 Flask Framework: Utilize Flask to develop the application logic and manage HTTP requests.
 MariaDB: Use MariaDB for the relational database to store user information and application data.
