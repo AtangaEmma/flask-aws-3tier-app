@@ -32,8 +32,15 @@ In this scenario, we are going to use the default VPC. We will create a security
 # Configuration Process
 
 ### Data Tier
+SSH into the data tier instance and run the following commands
 
 1. **Install MariaDB**:
    ```sh
    sudo yum update -y
    sudo yum install -y mariadb-server
+
+2. **Start and Enable Mariadb Service**:
+   ```sh
+   sudo systemctl start mariadb
+   sudo systemctl enable mariadb
+
