@@ -146,6 +146,9 @@ SSH into the presenter tier instance and run the following commands.
 
 2. Input data and try submitting it.
 
+![submit_input](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/2845236d-dad4-4b9f-8e43-5c52bc8f86a2)
+
+3. 
    
 
 
