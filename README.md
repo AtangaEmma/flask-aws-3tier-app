@@ -136,6 +136,8 @@ SSH into the presenter tier instance and run the following commands.
    ```sh
    cd /var/www/html/
 
+**Note**: Remember to replace the public_Ip at the connection string line at the level of the **Passport Application Form** section of the html code which is **"http://public_ip_logic_tier_instance:5000/submit"** and at the JavaScript section of the code that uses the Fetch API to make a POST request to **"http://public_ip_logic_tier_instance:5000/submit"** with the Public_Ip of the Logic tier Instance.
+
 3. **Restart the Apache Server**:
    ```sh
    sudo systemctl restart httpd
