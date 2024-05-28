@@ -62,7 +62,6 @@ SSH into the data tier instance and run the following commands.
      CREATE DATABASE flaskdb;
      CREATE USER 'flaskuser'@'private_ip_logic_tier' IDENTIFIED BY 'your_password';
      GRANT ALL PRIVILEGES ON flaskdb.* TO 'flaskuser'@'private_ip_logic_tier';
-     GRANT ALL PRIVILEGES ON flaskdb.* TO 'flaskuser'@'public_ip_logic_tier';
      FLUSH PRIVILEGES;
 
 5. **Configure MariaDB to Accept Remote Connections**:
