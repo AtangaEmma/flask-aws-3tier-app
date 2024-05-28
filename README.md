@@ -85,7 +85,7 @@ SSH into the data tier instance and run the following commands.
      
    - Select the database you created **flaskdb**
     ```sh
-    USE flaskdb;
+     USE flaskdb;
     ```
     
    - Create a table called **applications** in the database:
