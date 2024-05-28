@@ -120,6 +120,8 @@ SSH into the logic tier instance and run the following commands.
 
 **Note**: Remember to Replace the **hostname** = 'with the private_ip of data tier instance', **user** = 'the user you created when creating database in data tier',    **password** = 'the password of your user' and **database** = 'the name of the database you created in the data tier'.
 
+![sample_connection_string_view_app py](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/b2cf5833-429d-49ba-99c6-ba001bb63cbc)
+
    
    - Run the Flask application:
      ```sh
@@ -143,6 +145,8 @@ SSH into the presenter tier instance and run the following commands.
    cd /var/www/html/
 
 **Note**: Remember to replace the public_Ip at the connection string line at the level of the **Passport Application Form** section of the html code which is **"http://public_ip_logic_tier_instance:5000/submit"** and at the JavaScript section of the code that uses the Fetch API to make a POST request to **"http://public_ip_logic_tier_instance:5000/submit"** with the Public_Ip of the Logic tier Instance.
+![sample_connection_string_view_html](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/a9bddf79-5d74-4efa-b336-b21063da8806)
+![sample_connection_string_view_html_1](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/63cd076c-db3e-48d6-bad9-848e20f943bc)
 
 3. **Restart the Apache Server**:
    ```sh
