@@ -218,7 +218,8 @@ Make sure to replace **'ec2-user'** with your actual username if it's different.
    
 After completing these steps, try inputting your data again, and you should receive a success message.
 
-     
+**THANK YOU**
+**PLEASE DO WELL TO REACH ME IN CASE YOU HAVE ANY TROUBLES. I WILL BE VERY GLAD TO HELP**
 
      
 
