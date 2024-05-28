@@ -173,6 +173,48 @@ SSH into the presenter tier instance and run the following commands.
 
 
 
+### Things to Note:
+When you run the **app.py** logic code, you might try submitting data but find that it doesn't go through. This could be because **app.py** has stopped running. That's after all other connections have been done properly yet, after submitting the datat, it fails. To address this, you'll need to restart it by using the **python3 app.py** command.
+
+Alternatively, to ensure the logic runs continuously, follow these steps:
+
+1. **Create a systemd service file**: Open a terminal and create a new service file for your Flask application:
+   ```sh
+   sudo nano /etc/systemd/system/flaskapp.service
+   
+2. **Add the following configuration**: Replace **'/path/to/your/app'** with the actual path to your Flask application. Based on this guide, it's located in the home directory.
+   ```sh
+   [Unit]
+   Description=A simple Flask web application
+   After=network.target
+   
+   [Service]
+   User=ec2-user
+   WorkingDirectory=/home/ec2-user
+   ExecStart=/usr/bin/python3 /home/ec2-user/app.py
+   Restart=always
+   
+   [Install]
+   WantedBy=multi-user.target
+
+Make sure to replace **'ec2-user'** with your actual username if it's different.
+
+3. **Reload the systemd daemon**:
+   ```sh
+   sudo systemctl daemon-reload
+
+4. **Start your Flask service**:
+   ```sh
+   sudo systemctl start flaskapp
+
+5. **Enable the service to start on boot**:
+   ```sh
+   sudo systemctl enable flaskapp
+
+6. **Check the status of the service**:
+   ```sh
+   sudo systemctl status flaskapp
+
 
 
      
