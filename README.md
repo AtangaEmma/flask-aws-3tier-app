@@ -214,7 +214,7 @@ Make sure to replace **'ec2-user'** with your actual username if it's different.
 6. **Check the status of the service**:
    ```sh
    sudo systemctl status flaskapp
-
+   ```
 
 
      
