@@ -118,7 +118,8 @@ SSH into the logic tier instance and run the following commands.
 2. **Create app.py**:
    - Create the app.py then paste the code in the app.py file found in this GitHub repo into the file.
 
-**Note**: Remember to Replace the **hostname** = 'with the public_ip of data tier instance', **user** = 'the user you created when creating database in data tier',    **password** = 'the password of your user' and **database** = 'the name of the database you created in the data tier'.
+**Note**: Remember to Replace the **hostname** = 'with the private_ip of data tier instance', **user** = 'the user you created when creating database in data tier',    **password** = 'the password of your user' and **database** = 'the name of the database you created in the data tier'.
+
    
    - Run the Flask application:
      ```sh
