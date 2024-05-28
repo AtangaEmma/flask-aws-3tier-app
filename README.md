@@ -83,11 +83,12 @@ SSH into the data tier instance and run the following commands.
      ```sh
      mysql -u root -p
      
-   -Select the database you created **flaskdb**
+   - Select the database you created **flaskdb**
     ```sh
     USE flaskdb;
-
-   - Create the applications table:
+    ```
+    
+   - Create a table called **applications** in the database:
      ```sh
      CREATE TABLE applications (
         id INT AUTO_INCREMENT PRIMARY KEY,
