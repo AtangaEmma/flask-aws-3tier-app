@@ -82,6 +82,10 @@ SSH into the data tier instance and run the following commands.
    - Log into MariaDB:
      ```sh
      mysql -u root -p
+     
+   -Select the database you created **flaskdb**
+    ```sh
+    USE flaskdb;
 
    - Create the applications table:
      ```sh
