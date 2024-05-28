@@ -164,7 +164,7 @@ SSH into the presenter tier instance and run the following commands.
    USE flaskdb;
    SELECT * FROM applications;
  
-![database_view](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/55c1edf5-d95e-44f7-8096-b9559b00e1d5)   
+![database_view](https://github.com/ARREYETTA14/flask-aws-3tier-app/assets/112652000/e8940bd1-6290-4fef-a1a5-f1fd5d7bd82b) 
 
 
 
