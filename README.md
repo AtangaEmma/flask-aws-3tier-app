@@ -111,9 +111,10 @@ SSH into the logic tier instance and run the following commands.
 1. **Install Flask Dependencies**:
    ```sh
    sudo yum update -y
-   sudo yum install -y python3
-   python3 -m pip install --upgrade pip
-   pip3 install flask flask-cors mysql-connector-python
+   sudo yum install python3-pip
+   pip3 install Flask mysql-connector-python
+   pip3 install flask-cors
+   sudo chmod 755 app.py
 
 2. **Create app.py**:
    - Create the app.py then paste the code in the app.py file found in this GitHub repo into the file.
