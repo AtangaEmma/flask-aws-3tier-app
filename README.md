@@ -215,7 +215,8 @@ Make sure to replace **'ec2-user'** with your actual username if it's different.
    ```sh
    sudo systemctl status flaskapp
    ```
-
+   
+After completing these steps, try inputting your data again, and you should receive a success message.
 
      
 
